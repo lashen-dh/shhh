@@ -1,0 +1,46 @@
+allow_embedding: false
+correct_dependency_ids: {dep_lin1x4oec0ytd: 4UK6WHQ6UX7AKELK}
+db_schema:
+  tblquestions:
+    client: full
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: type
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: instruction
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      name: details
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      name: answers
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      name: correctAnswer
+      type: string
+    - admin_ui: {order: 5, width: 200}
+      name: elo
+      type: number
+    server: full
+    title: tblQuestions
+dependencies:
+- config: {}
+  dep_id: dep_lin1x4oec0ytd
+  resolution_hints: {app_id: 4UK6WHQ6UX7AKELK, name: Material 3 Theme, package_name: m3}
+  version: {version_tag: v1.2.5}
+metadata: {description: Python learning app program for VCE software dev 3/4, title: Python Learning App}
+name: Clone of Python Learning App
+native_deps: null
+package_name: Python_Learning_App
+runtime_options:
+  client_version: '3'
+  server_spec: {base: python310-minimal}
+  server_version: python3-full
+  version: 3
+services:
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/tables.yml
+startup: {module: Quiz, type: form}
+startup_form: null

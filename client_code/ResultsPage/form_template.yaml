@@ -1,0 +1,7 @@
+components:
+- layout_properties: {grid_position: 'EAPCBV,KGREPT'}
+  name: heading_1
+  properties: {align: center, text: RESULTS}
+  type: form:dep_lin1x4oec0ytd:_Components.Heading
+container: {type: ColumnPanel}
+is_package: true

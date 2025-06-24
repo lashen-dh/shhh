@@ -1,0 +1,89 @@
+components:
+- components:
+  - event_bindings: {tick: timer_tick}
+    layout_properties: {grid_position: 'UCXKVP,VRQSSO'}
+    name: timer
+    properties: {interval: 1}
+    type: Timer
+  - layout_properties: {grid_position: 'QTVLWE,ZPZZOM AAMVBN,UGOIRY'}
+    name: lblUsername
+    properties: {align: center, text: 'Username '}
+    type: form:dep_lin1x4oec0ytd:_Components.Text
+  - layout_properties: {grid_position: 'QTVLWE,ZPZZOM BRLSMY,XNSBHM'}
+    name: lblScore
+    properties: {align: center}
+    type: form:dep_lin1x4oec0ytd:_Components.Text
+  - layout_properties: {grid_position: 'QTVLWE,ZPZZOM VOMMJD,VIZXAA'}
+    name: lblHealth
+    properties: {align: center}
+    type: form:dep_lin1x4oec0ytd:_Components.Text
+  - layout_properties: {grid_position: 'QTVLWE,ZPZZOM MPGQIE,KXVTEJ'}
+    name: lblQuestionProgress
+    properties: {align: center}
+    type: form:dep_lin1x4oec0ytd:_Components.Text
+  - layout_properties: {grid_position: 'QTVLWE,ZPZZOM EXCQUG,PVFVYT'}
+    name: lblTimeTaken
+    properties: {align: center, text: '0:00'}
+    type: form:dep_lin1x4oec0ytd:_Components.Text
+  - components:
+    - components:
+      - components:
+        - layout_properties: {slot: card-content-container-slot}
+          name: lblQuestionNumber
+          properties: {bold: false, italic: true, text: Question Number}
+          type: form:dep_lin1x4oec0ytd:_Components.Text
+        - layout_properties: {slot: card-content-container-slot}
+          name: lblQuestionInstruction
+          properties: {align: center, bold: true, scale: large, style: headline, text: Question Instruction}
+          type: form:dep_lin1x4oec0ytd:_Components.Heading
+        - layout_properties: {slot: card-content-container-slot}
+          name: lblQuestionDetails
+          properties: {text: ' Question detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion detailsQuestion details'}
+          type: form:dep_lin1x4oec0ytd:_Components.Text
+        layout_properties: {slot: card-content-container-slot}
+        name: cardQuestions
+        properties: {}
+        type: form:dep_lin1x4oec0ytd:_Components.Card.CardContentContainer
+      layout_properties: {slot: card-content-slot}
+      name: card_content_container_4
+      properties: {}
+      type: form:dep_lin1x4oec0ytd:_Components.Card.CardContentContainer
+    - event_bindings: {click: btnAns1_click}
+      layout_properties: {slot: card-content-slot}
+      name: btnAns1
+      properties: {align: full, appearance: outlined}
+      type: form:dep_lin1x4oec0ytd:_Components.Button
+    - event_bindings: {click: btnAns2_click}
+      layout_properties: {slot: card-content-slot}
+      name: btnAns2
+      properties: {align: full, appearance: outlined}
+      type: form:dep_lin1x4oec0ytd:_Components.Button
+    - event_bindings: {click: btnAns3_click}
+      layout_properties: {slot: card-content-slot}
+      name: btnAns3
+      properties: {align: full, appearance: outlined}
+      type: form:dep_lin1x4oec0ytd:_Components.Button
+    - event_bindings: {click: btnAns4_click}
+      layout_properties: {slot: card-content-slot}
+      name: btnAns4
+      properties: {align: full, appearance: outlined}
+      type: form:dep_lin1x4oec0ytd:_Components.Button
+    - event_bindings: {click: btnSubmit_click}
+      layout_properties: {slot: card-content-slot}
+      name: btnSubmit
+      properties: {text: Submit Answer}
+      type: form:dep_lin1x4oec0ytd:_Components.Button
+    layout_properties: {grid_position: 'QTVLWE,YAWZBI'}
+    name: card_4
+    properties: {}
+    type: form:dep_lin1x4oec0ytd:_Components.Card
+  layout_properties: {grid_position: 'LTKDAS,GDKJQW'}
+  name: column_panel_1
+  properties:
+    col_spacing: none
+    col_widths: '{"HWJEQS":15,"YAWZBI":45}'
+    spacing:
+      margin: [null, 0, null, 0]
+  type: ColumnPanel
+container: {type: ColumnPanel}
+is_package: true
